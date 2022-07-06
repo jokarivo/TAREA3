@@ -24,7 +24,6 @@
 # INSTALAR LIBERERÍAS 
 
 	conda install pip
-	# pip install -r requirements
 	pip install gensim
 	pip install matplotlib
 	pip install nltk
@@ -32,6 +31,14 @@
 	pip install typing
 	pip install jupyter
 	pip install notebook
+	pip install "spacy[lookups]"
+
+	# OPCIONAL / NO NECESARIO / TOMA MUCHO TIEMPO
+
+	# python -m spacy download en_core_web_trf
+	# python -m spacy download es_dep_news_trf
+
+	# pip install -r requirements
 	# pip install ipykernel # to use an existing jupytar installation
 	# conda install -n base nb_conda_kernels
 
@@ -44,4 +51,12 @@
 
 	cd notebooks
 	dir
-	jupyter notebook prepare_data.ipynb
+	jupyter notebook sentimentAnalysis.ipynb
+
+# FINALIZAR
+
+	conda deactivate
+
+# RETOMAR
+
+	conda activate tarea3

@@ -32,11 +32,11 @@
 	pip install jupyter
 	pip install notebook
 	pip install "spacy[lookups]"
-
+	
+	python -m spacy download en_core_web_trf
+	python -m spacy download es_dep_news_trf
+	
 	# OPCIONAL / NO NECESARIO / TOMA MUCHO TIEMPO
-
-	# python -m spacy download en_core_web_trf
-	# python -m spacy download es_dep_news_trf
 
 	# pip install -r requirements
 	# pip install ipykernel # to use an existing jupytar installation

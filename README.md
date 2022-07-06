@@ -42,11 +42,18 @@
 	# pip install ipykernel # to use an existing jupytar installation
 	# conda install -n base nb_conda_kernels
 
-# INGRESAR AL DIRECTORIO DEL PROYECTO DE SCRAPY
+# INGRESAR AL DIRECTORIO DEL PROYECTO
 
 	# cd C:\Users\chris\anaconda3\envs\tarea3
 	cd ..\tarea3
+	
+# EN EL DIRECTORIO DE ESTE VENV CREADO
+# COPIAR LOS ARCHIVOS DE LA CARPETA DEL GIT
+# EN SUS RESPECTIVOS DIRECTORIOS
 
+	..\tarea3\data
+	..\tarea3\notebooks
+	
 # CORRER LOS NOTEBOOKS
 
 	cd notebooks
@@ -60,3 +67,5 @@
 # RETOMAR
 
 	conda activate tarea3
+	cd ..\tarea3
+	jupyter notebook sentimentAnalysis.ipynb
